@@ -1,0 +1,9 @@
+{% extendes "registration/base.html"}
+
+{% comment %}
+Used after successful account activation.
+{% endcomment %}
+
+{% block content %}
+Thanks! Your account has be activated. Please <a href="{% url auth_login %}?next={% url wiki_article_index %}"> login to continue</a>
+{% endblock % }

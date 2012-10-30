@@ -1,0 +1,6 @@
+{% comment %}
+
+used to generate the subject line of the activation email.
+{% endcomment %}
+
+Yor account activaction details at {{ site }}

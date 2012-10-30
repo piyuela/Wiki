@@ -1,0 +1,18 @@
+{% extends "resgistration/base.html" %}
+{% comment %}
+used to show the form users will fill out to register.
+{% endcomment %}
+
+{%block content %}
+
+<h1> Create new Account</h1>
+<form action="" method="POST">
+	{% csrf_token %}
+	<table>
+		{{ form.as_table }}
+	</table>
+	<input type="submit" name="Submit" value="Submit">
+</form>
+
+{% endblock %}
+			
